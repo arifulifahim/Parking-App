@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ParkingApp.RegisterRentingPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Entry Placeholder="First Name" x:Name="firstName" />
+            <Entry Placeholder="Last Name" x:Name="lastName" />
+            <Entry Placeholder="Email" x:Name="email" />
+            <Entry Placeholder="Phone Number" x:Name="phoneNumber" />
+            <Entry Placeholder="Parking Address" x:Name="parkingAddress" />
+            <Entry Placeholder="Mailing Address" x:Name="mailingAddress" />
+            <Switch x:Name="sameAddressSwitch" Toggled="OnSameAddressToggled" />
+            <Button Text="Upload Image" Clicked="OnUploadClicked" />
+            <CheckBox x:Name="termsCheckBox" CheckedChanged="OnTermsCheckedChanged" />
+            <Label Text="I agree to the terms and conditions" />
+            <Button Text="Submit" IsVisible="False" Clicked="OnSubmitClicked" x:Name="submitButton" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
